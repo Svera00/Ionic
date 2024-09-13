@@ -2,13 +2,13 @@ ion-content {
     --background: linear-gradient(90deg, rgb(3, 181, 187) 0%, rgb(0, 156, 161) 35%, rgb(3, 127, 131) 100%);
     
     ion-card {
-      width: 90%; /* Added to give the card margins */
-      margin: 100px auto; /* Centers the card horizontally */
+      width: 90%; 
+      margin: 100px auto; 
       box-shadow: none;
       border-radius: 14px;
       padding: 14px;
       background: rgba(49, 49, 49, 0.8);
-      text-align: center; /* Centers the text inside the card */
+      text-align: center; 
       
     }
 }

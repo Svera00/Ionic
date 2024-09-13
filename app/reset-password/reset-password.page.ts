@@ -13,7 +13,6 @@ export class ResetPasswordPage {
   constructor(private router: Router) {}
 
   recoverPassword() {
-    // Simular recuperación de contraseña
     this.router.navigate(['/login']);
   }
 }

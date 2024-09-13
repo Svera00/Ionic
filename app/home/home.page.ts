@@ -13,11 +13,9 @@ export class HomePage implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    // Obtenemos el nombre de usuario desde el estado del enrutador
     if (history.state && history.state.username) {
       this.username = history.state.username;
     } else {
-      // Si no se obtiene el username, redirigir al login
       this.router.navigate(['/login']);
     }
   }

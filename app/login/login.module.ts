@@ -17,9 +17,9 @@ import { MatButtonModule } from '@angular/material/button';
     FormsModule,
     IonicModule,
     LoginPageRoutingModule,   
-    MatInputModule,   // Importar MatInputModule
-    MatFormFieldModule,  // Importar MatFormFieldModule
-    MatButtonModule  // Importar MatButtonModule
+    MatInputModule,   
+    MatFormFieldModule, 
+    MatButtonModule  
   ],
   declarations: [LoginPage]
 })
