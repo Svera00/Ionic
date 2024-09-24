@@ -10,48 +10,215 @@
         </ion-label>
       </ion-button>
     </ion-buttons>
+
     <ion-buttons slot="end">
-      <ion-button class="bordered" fill="solid" color="dark">
+      <ion-button class="bordered" fill="solid" color="dark" (click)="sidenav.toggle()">
         <ion-icon color="light" name="bag-check-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card>
-    <ion-searchbar disabled="true" placeholder="Disabled"></ion-searchbar>
-  </ion-card>
+<mat-sidenav-container style="height: 100%;">
+  <mat-sidenav #sidenav mode="over" position="end">
+    <div class="sidenav-content">
+      <div class="cart-item">
+        <img src="assets/img/combo1.png" alt="item1" />
+        <div class="item-details">
+          <h3>combo 1</h3>
+          <p class="price-new">$10000</p>
+          <div class="quantity-control">
+            <ion-button class="custom-button2" >-</ion-button>
+            <p>2</p>
+            <ion-button class="custom-button2">+</ion-button>
+          </div>
+        </div>
+        <ion-button fill="clear" color="danger">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-button>
+      </div>
 
-  <ion-card>
-    <ion-card-header>
-      <img class="files" src="assets/img/combo1.png">
-    </ion-card-header>
-    <ion-card-content>
-      <ion-card-title>Combo 1</ion-card-title>
-      <ion-card-subtitle>10000$</ion-card-subtitle>
-      <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
-    </ion-card-content>
-  </ion-card>
-<ion-card>
-    <ion-card-header>
-      <img class="files" src="assets/img/combo2.png">
-    </ion-card-header>
-    <ion-card-content>
-      <ion-card-title>Sandwich</ion-card-title>
-      <ion-card-subtitle>10000$</ion-card-subtitle>
-      <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
-    </ion-card-content>
-  </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <img class="files" src="assets/img/combo3.png">
-    </ion-card-header>
-    <ion-card-content>
-      <ion-card-title>Hamburguesa</ion-card-title>
-      <ion-card-subtitle>10000$</ion-card-subtitle>
-      <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+      <div class="cart-item">
+        <img src="assets/img/combo1.png" alt="item1" />
+        <div class="item-details">
+          <h3>combo 1</h3>
+          <p class="price-new">$10000</p>
+          <div class="quantity-control">
+            <ion-button class="custom-button2" >-</ion-button>
+            <p>2</p>
+            <ion-button class="custom-button2">+</ion-button>
+          </div>
+        </div>
+        <ion-button fill="clear" color="danger">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="cart-item">
+        <img src="assets/img/combo1.png" alt="item1" />
+        <div class="item-details">
+          <h3>combo 1</h3>
+          <p class="price-new">$10000</p>
+          <div class="quantity-control">
+            <ion-button class="custom-button2" >-</ion-button>
+            <p>2</p>
+            <ion-button class="custom-button2">+</ion-button>
+          </div>
+        </div>
+        <ion-button fill="clear" color="danger">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-button>
+      </div>
+      <div class="cart-item">
+        <img src="assets/img/combo1.png" alt="item1" />
+        <div class="item-details">
+          <h3>combo 1</h3>
+          <p class="price-new">$10000</p>
+          <div class="quantity-control">
+            <ion-button class="custom-button2" >-</ion-button>
+            <p>2</p>
+            <ion-button class="custom-button2">+</ion-button>
+          </div>
+        </div>
+        <ion-button fill="clear" color="danger">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+
+            <div class="cart-item">
+        <div class="item-details">
+          <p class="subtotal">Sub total:  80000</p>
+        </div>
+      </div>
+
+      <div class="checkout-button-container">
+        <ion-button expand="block" class="checkout-button">
+          Proceder al Checkout
+        </ion-button>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <ion-content>
+      <ion-card>
+        <ion-searchbar placeholder="Buscar"></ion-searchbar>
+      </ion-card>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card>
+              <ion-card-header>
+                <img class="files" src="assets/img/combo1.png">
+              </ion-card-header>
+              <ion-card-content>
+                <ion-card-title>Combo 1</ion-card-title>
+                <ion-card-subtitle>10000$</ion-card-subtitle>
+                <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+            <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card>
+              <ion-card-header>
+                <img class="files" src="assets/img/combo1.png">
+              </ion-card-header>
+              <ion-card-content>
+                <ion-card-title>Combo 2</ion-card-title>
+                <ion-card-subtitle>10000$</ion-card-subtitle>
+                <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+                      <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card>
+              <ion-card-header>
+                <img class="files" src="assets/img/combo2.png">
+              </ion-card-header>
+              <ion-card-content>
+                <ion-card-title>Combo 3</ion-card-title>
+                <ion-card-subtitle>10000$</ion-card-subtitle>
+                <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+                      <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card>
+              <ion-card-header>
+                <img class="files" src="assets/img/combo2.png">
+              </ion-card-header>
+              <ion-card-content>
+                <ion-card-title>Combo 4</ion-card-title>
+                <ion-card-subtitle>10000$</ion-card-subtitle>
+                <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+                      <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card>
+              <ion-card-header>
+                <img class="files" src="assets/img/combo1.png">
+              </ion-card-header>
+              <ion-card-content>
+                <ion-card-title>Combo 5</ion-card-title>
+                <ion-card-subtitle>10000$</ion-card-subtitle>
+                <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+                      <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card>
+              <ion-card-header>
+                <img class="files" src="assets/img/combo2.png">
+              </ion-card-header>
+              <ion-card-content>
+                <ion-card-title>Combo 6</ion-card-title>
+                <ion-card-subtitle>10000$</ion-card-subtitle>
+                <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+                      <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card>
+              <ion-card-header>
+                <img class="files" src="assets/img/combo1.png">
+              </ion-card-header>
+              <ion-card-content>
+                <ion-card-title>Combo 7</ion-card-title>
+                <ion-card-subtitle>10000$</ion-card-subtitle>
+                <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+                      <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card>
+              <ion-card-header>
+                <img class="files" src="assets/img/combo2.png">
+              </ion-card-header>
+              <ion-card-content>
+                <ion-card-title>Combo 8</ion-card-title>
+                <ion-card-subtitle>10000$</ion-card-subtitle>
+                <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+                      <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card>
+              <ion-card-header>
+                <img class="files" src="assets/img/combo1.png">
+              </ion-card-header>
+              <ion-card-content>
+                <ion-card-title>Combo 9</ion-card-title>
+                <ion-card-subtitle>10000$</ion-card-subtitle>
+                <ion-button class="custom-button" expand="full" type="submit">Agregar al carrito</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

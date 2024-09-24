@@ -27,6 +27,7 @@ ion-content {
     
           ion-label {
             padding: 6px 0;
+            font-size: 18px;
     
 
           }
@@ -50,12 +51,12 @@ ion-content {
 
         ion-item {
             margin: 10px auto;
-            background: rgba(255, 255, 255, 0.2); /* Translucent background for form fields */
-            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2); 
+            border-radius: 20px;
           }
           
           .custom-button {
-            background-color: rgb(0, 156, 161);
-            color: white; /* Cambia el color del texto si es necesario */
+            --background: rgb(0, 156, 161);
+            --color: white; 
+            border-radius: 20px;
           }
-          

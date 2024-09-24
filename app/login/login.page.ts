@@ -17,6 +17,11 @@ export class LoginPage {
     private alertController: AlertController 
   ) {}
 
+  ionViewWillEnter() {
+    this.username = '';
+    this.password = '';
+  }
+
   async login() {
     if (this.username && this.password) {
       if (this.username === 'admin' && this.password === '1234') {
